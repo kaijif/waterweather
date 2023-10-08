@@ -1,0 +1,394 @@
+{
+  "locatorUrl": "//geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+  "wbd": "https://gispub.epa.gov/arcgis/rest/services/OW/HydrologicUnits/MapServer/6",
+  "counties": "https://services.arcgis.com/P3ePLMYs2RVChkJx/ArcGIS/rest/services/USA_Counties/FeatureServer/0",
+  "stateBoundaries": "https://enviroatlas.epa.gov/arcgis/rest/services/Supplemental/Reference_Boundaries/MapServer",
+  "mappedWater": "https://watersgeo.epa.gov/arcgis/rest/services/NHDPlus/NHDPlus/MapServer",
+  "upstreamWatershed": "https://gispub.epa.gov/arcgis/rest/services/OW/CatchmentFabric/MapServer/2/",
+  "nonprofits": "https://services7.arcgis.com/RozrT2Mi6zTs0s5F/arcgis/rest/services/Nonprofits_10_24_18/FeatureServer/0/",
+  "tribal": "https://geopub.epa.gov/arcgis/rest/services/EMEF/Tribal/MapServer",
+  "congressional": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_116th_Congressional_Districts_all/FeatureServer",
+  "wsio": "https://gispub.epa.gov/arcgis/rest/services/r4/wsio/MapServer/0",
+  "waterbodyService": {
+    "base": "https://inlandwaters.geoplatform.gov/arcgis/rest/services/OW/ATTAINS_Assessment/MapServer",
+    "points": "https://inlandwaters.geoplatform.gov/arcgis/rest/services/OW/ATTAINS_Assessment/MapServer/0",
+    "lines": "https://inlandwaters.geoplatform.gov/arcgis/rest/services/OW/ATTAINS_Assessment/MapServer/1",
+    "areas": "https://inlandwaters.geoplatform.gov/arcgis/rest/services/OW/ATTAINS_Assessment/MapServer/2",
+    "summary": "https://inlandwaters.geoplatform.gov/arcgis/rest/services/OW/ATTAINS_Assessment/MapServer/4",
+    "controlTable": "https://inlandwaters.geoplatform.gov/arcgis/rest/services/OW/ATTAINS_Assessment/MapServer/5"
+  },
+  "glossaryURL": "https://etss.epa.gov/synaptica_rest_services/api/vocabs/name/HMW%20Glossary/terms/full",
+  "waterQualityPortal": {
+    "userInterface": "https://www.waterqualitydata.us/",
+    "stationSearch": "https://www.waterqualitydata.us/data/Station/search?",
+    "resultSearch": "https://www.waterqualitydata.us/data/Result/search?",
+    "monitoringLocation": "https://www.waterqualitydata.us/data/summary/monitoringlocation/",
+    "monitoringLocationDetails": "https://www.waterqualitydata.us/provider/"
+  },
+  "usgsSensorThingsAPI": "https://labs.waterdata.usgs.gov/sta/v1.1/Things",
+  "usgsDailyValues": "https://waterservices.usgs.gov/nwis/dv/",
+  "usgsWaterAlert": "https://www.usgs.gov/faqs/there-way-get-alerts-about-streamflow-conditions",
+  "echoNPDES": {
+    "getFacilities": "https://echodata.epa.gov/echo/cwa_rest_services.get_facilities",
+    "metadata": "https://echodata.epa.gov/echo/cwa_rest_services.metadata"
+  },
+  "dwmaps": {
+    "GetPWSWMHUC12FIPS": "https://sdwis.epa.gov/ords/sfdw_rest/sfdw_rest/sfdw_rest/GetPWSWMHUC12FIPS/",
+    "getGPRASummary": "https://sdwis.epa.gov/ords/sfdw_rest/sfdw_rest/sfdw_rest/GetGPRASummary/",
+    "getGPRASystemCountsByType": "https://sdwis.epa.gov/ords/sfdw_rest/sfdw_rest/sfdw_rest/GetGPRASystemCountsByType/"
+  },
+  "grts": {
+    "getGRTSHUC12": "https://ordspub.epa.gov/ords/grts_rest/grts_rest_apex/grts_rest_apex/GetProjectsByHUC12/",
+    "getSSByState": "https://grts.epa.gov/ords/grts_rest/grts_rest_apex/GetSSByState/"
+  },
+  "attains": {
+    "serviceUrlDev": "http://54.209.48.156/attains-public/api/",
+    "serviceUrl": "https://attains.epa.gov/attains-public/api/"
+  },
+  "fishingInformationService": {
+    "serviceUrl": "https://watersgeo.epa.gov/arcgis/rest/services/NLFA/FISH_GEN/MapServer/13/",
+    "queryStringFirstPart": "query?where=IS_DEFAULT%3D%27Y%27+and+STATE+in+%28",
+    "queryStringSecondPart": "%29&outFields=*&returnGeometry=false&returnTrueCurves=false&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&returnDistinctValues=false&returnExtentsOnly=false&f=json"
+  },
+  "wildScenicRivers": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiversV2_AGOL/FeatureServer/1/",
+  "protectedAreasDatabase": "https://gis1.usgs.gov/arcgis/rest/services/padus3/Protection_Mechanism_Category/MapServer/",
+  "ejscreen": "https://geopub.epa.gov/arcgis/rest/services/ejscreen/Demographic_Indicators_2020_Public/MapServer/",
+  "sfdw": "https://ordspub.epa.gov/ords/sfdw/",
+  "landCover": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2019_Land_Cover_L48/wms?service=WMS&request=GetCapabilities",
+  "cyan": {
+    "application": "https://www.epa.gov/water-research/cyanobacteria-assessment-network-application-cyan-app",
+    "cellConcentration": "https://cyan.epa.gov/waterbody/data",
+    "dataDownload": "https://cyan.epa.gov/waterbody/data_download",
+    "images": "https://cyan.epa.gov/waterbody/image",
+    "properties": "https://cyan.epa.gov/waterbody/properties",
+    "waterbodies": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/waterbodies_9/FeatureServer/0"
+  },
+  "printService": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+  "googleAnalyticsMapping": [
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}actions*",
+      "name": "attains - actions"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}assessments*&excludeAssessments=Y",
+      "name": "attains - assessments (documents only)"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}assessments*",
+      "name": "attains - assessments"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}assessmentUnits*",
+      "name": "attains - assessment units"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}huc12summary?huc=*",
+      "name": "attains - huc12 summary"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}plans?huc=*",
+      "name": "attains - plans"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}states",
+      "name": "attains - states"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}states/*/organizations",
+      "name": "attains - organizations"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}surveys*",
+      "name": "attains - surveys"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}usesStateSummary*",
+      "name": "attains - usesStateSummary"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}metrics*",
+      "name": "attains - metrics"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}domains?domainName=ParameterName",
+      "name": "attains - domain mapping"
+    },
+    {
+      "urlLookup": "attains.serviceUrl",
+      "wildcardUrl": "{urlLookup}documents*",
+      "name": "attains - documents"
+    },
+    {
+      "urlLookup": "grts.getGRTSHUC12",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "grts - nonpoint restoration projects"
+    },
+    {
+      "urlLookup": "grts.getSSByState",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "grts - state water stories"
+    },
+    {
+      "urlLookup": "dwmaps.getGPRASummary",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "sdwis - GPRA summary"
+    },
+    {
+      "urlLookup": "dwmaps.getGPRASystemCountsByType",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "sdwis - GPRA system counts by type"
+    },
+    {
+      "urlLookup": "dwmaps.GetPWSWMHUC12FIPS",
+      "wildcardUrl": "{urlLookup}*/ZCzc/ZCzc",
+      "name": "sdwis - drinking water withdrawers"
+    },
+    {
+      "urlLookup": "dwmaps.GetPWSWMHUC12FIPS",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "sdwis - drinking water providers"
+    },
+    {
+      "urlLookup": "echoNPDES.getFacilities",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "echodata - echo get facilities"
+    },
+    {
+      "urlLookup": "echoNPDES.metadata",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "echodata - echo metadata"
+    },
+    {
+      "urlLookup": "waterQualityPortal.monitoringLocation",
+      "wildcardUrl": "{urlLookup}search?mimeType=geojson&zip=no&huc=*",
+      "name": "wqp - monitoring locations"
+    },
+    {
+      "urlLookup": "waterQualityPortal.monitoringLocation",
+      "wildcardUrl": "{urlLookup}search?mimeType=geojson&zip=no&siteid=*",
+      "name": "wqp - monitoring location site specific data"
+    },
+    {
+      "urlLookup": "waterQualityPortal.monitoringLocationDetails",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "wqp - monitoring location details"
+    },
+    {
+      "urlLookup": "waterQualityPortal.resultSearch",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "wqp - result search"
+    },
+    {
+      "urlLookup": "waterQualityPortal.stationSearch",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "wqp - station search"
+    },
+    {
+      "urlLookup": "usgsSensorThingsAPI",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "usgs – SensorThings API"
+    },
+    {
+      "urlLookup": "usgsDailyValues",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "usgs – daily values"
+    },
+    {
+      "urlLookup": "glossaryURL",
+      "wildcardUrl": "*{urlLookup}",
+      "name": "glossary"
+    },
+    {
+      "urlLookup": "fishingInformationService.serviceUrl",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "fishing info"
+    },
+    {
+      "urlLookup": "origin",
+      "wildcardUrl": "{urlLookup}/proxy?url={urlLookup}/data/national/NARS.json",
+      "name": "s3 lookup - national NARS"
+    },
+    {
+      "urlLookup": "origin",
+      "wildcardUrl": "{urlLookup}/proxy?url={urlLookup}/data/notifications/messages.json",
+      "name": "s3 lookup - notification messages"
+    },
+    {
+      "urlLookup": "origin",
+      "wildcardUrl": "{urlLookup}/proxy?url={urlLookup}/data/state/documentOrder.json",
+      "name": "s3 lookup - state documentOrder"
+    },
+    {
+      "urlLookup": "origin",
+      "wildcardUrl": "{urlLookup}/proxy?url={urlLookup}/data/state/reportStatusMapping.json",
+      "name": "s3 lookup - state reportStatusMapping"
+    },
+    {
+      "urlLookup": "origin",
+      "wildcardUrl": "{urlLookup}/proxy?url={urlLookup}/data/state/stateNationalUses.json",
+      "name": "s3 lookup - state stateNationalUses"
+    },
+    {
+      "urlLookup": "origin",
+      "wildcardUrl": "{urlLookup}/proxy?url={urlLookup}/data/state/surveyMapping.json",
+      "name": "s3 lookup - state surveyMapping"
+    },
+    {
+      "urlLookup": "origin",
+      "wildcardUrl": "{urlLookup}/proxy?url={urlLookup}/data/state/waterTypeOptions.json",
+      "name": "s3 lookup - state waterTypeOptions"
+    },
+    {
+      "urlLookup": "waterbodyService.summary",
+      "wildcardUrl": "{urlLookup}?f=json",
+      "name": "Attains_Assessment - get map server summary table max record count"
+    },
+    {
+      "urlLookup": "waterbodyService.points",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "Attains_Assessment - map server (points)"
+    },
+    {
+      "urlLookup": "waterbodyService.lines",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "Attains_Assessment - map server (lines)"
+    },
+    {
+      "urlLookup": "waterbodyService.areas",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "Attains_Assessment - map server (areas)"
+    },
+    {
+      "urlLookup": "waterbodyService.summary",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "Attains_Assessment - map server (summary table)"
+    },
+    {
+      "urlLookup": "wbd",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "Attains_Assessment - map server (watershed boundary dataset)"
+    },
+    {
+      "urlLookup": "counties",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "AGO - USA counties"
+    },
+    {
+      "urlLookup": "stateBoundaries",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "EnviroAtlas - USA State Boundaries"
+    },
+    {
+      "urlLookup": "tribal",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "geopub - EMEF tribal"
+    },
+    {
+      "urlLookup": "congressional",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "geopub - NEPAssist Congressional Districts"
+    },
+    {
+      "urlLookup": "mappedWater",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "watersgeo - NHDPlus mapped water"
+    },
+    {
+      "urlLookup": "wsio",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "gispub - wsio"
+    },
+    {
+      "urlLookup": "locatorUrl",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "ESRI geocoder"
+    },
+    {
+      "urlLookup": "nonprofits",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "ESRI services7 - Nonprofits"
+    },
+    {
+      "urlLookup": "upstreamWatershed",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "watersgeo - upstream watershed"
+    },
+    {
+      "urlLookup": "wildScenicRivers",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "Wild and Scenic Rivers"
+    },
+    {
+      "urlLookup": "protectedAreasDatabase",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "USGS - Protected Areas Database"
+    },
+    {
+      "urlLookup": "ejscreen",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "EJSCREEN"
+    },
+    {
+      "urlLookup": "sfdw",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "sfdw"
+    },
+    {
+      "urlLookup": "landCover",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "Land Cover"
+    },
+    {
+      "urlLookup": "usgsWaterAlert",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "USGS Water Alert"
+    },
+    {
+      "urlLookup": "cyan.application",
+      "wildcardUrl": "{urlLookup}/*",
+      "name": "CyAN - web application"
+    },
+    {
+      "urlLookup": "cyan.waterbodies",
+      "wildcardUrl": "{urlLookup}/*",
+      "name": "CyAN - waterbodies"
+    },
+    {
+      "urlLookup": "cyan.cellConcentration",
+      "wildcardUrl": "{urlLookup}/*",
+      "name": "CyAN - cell concentration"
+    },
+    {
+      "urlLookup": "cyan.images",
+      "wildcardUrl": "{urlLookup}/*",
+      "name": "CyAN - satellite images"
+    },
+    {
+      "urlLookup": "cyan.properties",
+      "wildcardUrl": "{urlLookup}/*",
+      "name": "CyAN - properties"
+    },
+    {
+      "urlLookup": "cyan.dataDownload",
+      "wildcardUrl": "{urlLookup}/*",
+      "name": "CyAN - data download"
+    },
+    {
+      "urlLookup": "printService",
+      "wildcardUrl": "{urlLookup}*",
+      "name": "print service"
+    }
+  ]
+}
