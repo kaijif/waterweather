@@ -60,7 +60,7 @@ function extractPopulationNames(ipac) {
                 }
             })
             .catch(function(error){console.log(error);});
-          names += `<a href=https://wikipedia.org/wiki/${value.optionalCommonName}><div>${value.optionalCommonName}</div></a>`;
+          hasArticle? names += `<a href=https://wikipedia.org/wiki/${value.optionalCommonName}><div>${value.optionalCommonName}</div></a>` : names += `<div>${value.optionalCommonName}</div>`;
     }
     return names
 }
