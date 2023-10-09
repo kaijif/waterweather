@@ -42,8 +42,25 @@ function extractPopulationNames(ipac) {
         // console.log(ipac[`property${index}`].optionalCommonName)
 
         //     console.log(ipac[`property${index}`].optionalCommonName)
+        var url = "https://en.wikipedia.org/w/api.php"; 
 
-          names += `<div>${value.optionalCommonName}</div>`;
+        var params = new URLSearchParams({
+            action: "query",
+            list: "search",
+            srsearch: value.optionalCommonName,
+            format: "json",
+            origin: location.origin
+        });
+        var hasArticle = false;
+        fetch(`${url}?${params}`)
+            .then(function(response){return response.json();})
+            .then(function(response) {
+                if (response.query.search[0].title === value.optionalCommonName){
+                    hasArticle = true;
+                }
+            })
+            .catch(function(error){console.log(error);});
+          names += `<a href=https://wikipedia.org/wiki/${value.optionalCommonName}><div>${value.optionalCommonName}</div></a>`;
     }
     return names
 }
@@ -377,7 +394,7 @@ main();
         attribution: 'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
         bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
         minZoom: 1,
-        maxZoom: 19,
+        maxZoom: 7,
         format: 'jpg',
         time: '',
         tilematrixset: 'GoogleMapsCompatible_Level'}
